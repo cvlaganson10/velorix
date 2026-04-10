@@ -14,7 +14,7 @@ export default function AboutSnapshot() {
             That insight became the foundation of everything Velorix builds. Today, we bring together strategy, systems design, digital marketing, SEO, AI, automation, custom development, and marketing execution — unified by one principle: a business that runs on structure converts more, scales easier, and keeps more of what it earns.
           </p>
           <div style={{ marginTop: 'var(--space-7)' }}>
-            <a href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ1aL1YCoKNEC3uFiNLCGU26MpNNh1UkO9daWNGUGhyAOie8EJzujLfUi9rURXSgnYvkleslW0Tk" target="_blank" rel="noopener noreferrer" className="btn btn-secondary">
+            <a href="#about" className="btn btn-secondary">
               Our Full Story
               <IconArrowRight size={14} />
             </a>
