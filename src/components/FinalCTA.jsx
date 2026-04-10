@@ -13,7 +13,7 @@ export default function FinalCTA() {
             Book a strategy call with Velorix. We will look at where your business is, where the gaps are, and what a properly built infrastructure could do for it.
           </p>
           <div style={{ marginTop: 'var(--space-7)' }}>
-            <a href="#contact" className="btn btn-primary btn-lg">
+            <a href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ1aL1YCoKNEC3uFiNLCGU26MpNNh1UkO9daWNGUGhyAOie8EJzujLfUi9rURXSgnYvkleslW0Tk" target="_blank" rel="noopener noreferrer" className="btn btn-primary btn-lg">
               Book a Strategy Call
               <IconArrowRight size={16} />
             </a>

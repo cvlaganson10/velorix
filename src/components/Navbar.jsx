@@ -46,7 +46,7 @@ export default function Navbar() {
           ))}
         </div>
 
-        <a href="#contact" className="btn btn-primary navbar__cta">
+        <a href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ1aL1YCoKNEC3uFiNLCGU26MpNNh1UkO9daWNGUGhyAOie8EJzujLfUi9rURXSgnYvkleslW0Tk" target="_blank" rel="noopener noreferrer" className="btn btn-primary navbar__cta">
           Book a Strategy Call
           <IconArrowRight size={14} />
         </a>
@@ -74,7 +74,7 @@ export default function Navbar() {
               {link.label}
             </a>
           ))}
-          <a href="#contact" className="btn btn-primary btn-lg" onClick={handleLinkClick} style={{ marginTop: '1.5rem', width: '100%', justifyContent: 'center' }}>
+          <a href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ1aL1YCoKNEC3uFiNLCGU26MpNNh1UkO9daWNGUGhyAOie8EJzujLfUi9rURXSgnYvkleslW0Tk" target="_blank" rel="noopener noreferrer" className="btn btn-primary btn-lg" onClick={handleLinkClick} style={{ marginTop: '1.5rem', width: '100%', justifyContent: 'center' }}>
             Book a Strategy Call
             <IconArrowRight size={14} />
           </a>

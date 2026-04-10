@@ -29,7 +29,7 @@ export default function AudienceSection() {
         </div>
 
         <div className="fade-in" style={{ textAlign: 'center', marginTop: 'var(--space-8)' }}>
-          <a href="#contact" className="btn btn-primary btn-lg">
+          <a href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ1aL1YCoKNEC3uFiNLCGU26MpNNh1UkO9daWNGUGhyAOie8EJzujLfUi9rURXSgnYvkleslW0Tk" target="_blank" rel="noopener noreferrer" className="btn btn-primary btn-lg">
             Let's Talk About Your Business
             <IconArrowRight size={16} />
           </a>

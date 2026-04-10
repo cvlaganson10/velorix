@@ -25,7 +25,7 @@ export default function Footer() {
             <p>
               Complete business systems — connected, automated, and built to scale.
             </p>
-            <a href="#contact" className="btn btn-primary" style={{ marginTop: 'var(--space-5)' }}>
+            <a href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ1aL1YCoKNEC3uFiNLCGU26MpNNh1UkO9daWNGUGhyAOie8EJzujLfUi9rURXSgnYvkleslW0Tk" target="_blank" rel="noopener noreferrer" className="btn btn-primary" style={{ marginTop: 'var(--space-5)' }}>
               Book a Strategy Call
               <IconArrowRight size={14} />
             </a>
@@ -48,7 +48,7 @@ export default function Footer() {
               <li><a href="#about">About</a></li>
               <li><a href="#approach">Our Approach</a></li>
               <li><a href="#audience">Who We Serve</a></li>
-              <li><a href="#contact">Contact</a></li>
+              <li><a href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ1aL1YCoKNEC3uFiNLCGU26MpNNh1UkO9daWNGUGhyAOie8EJzujLfUi9rURXSgnYvkleslW0Tk" target="_blank" rel="noopener noreferrer">Contact</a></li>
             </ul>
           </div>
         </div>
