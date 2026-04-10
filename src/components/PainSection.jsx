@@ -28,23 +28,50 @@ const painPoints = [
   },
 ];
 
+import { useRef, useState, useEffect } from 'react';
+
 export default function PainSection() {
+  const sectionRef = useRef(null);
+  const [isVisible, setIsVisible] = useState(false);
+  const [mountKey, setMountKey] = useState(0);
+
+  useEffect(() => {
+    const el = sectionRef.current;
+    if (!el) return;
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setMountKey(prev => prev + 1);
+          setIsVisible(true);
+        } else {
+          setIsVisible(false);
+        }
+      },
+      { threshold: 0.1 }
+    );
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <section className="section" id="pain">
       <div className="container">
         <div className="section-header fade-in">
           <span className="eyebrow">Why Growth Gets Stuck</span>
-          <div style={{ width: '100%', height: '200px', position: 'relative' }}>
-            <FallingText
-              text="The Problem Is Not Always Your Marketing. It Is What Happens After the Lead Arrives."
-              highlightWords={["Marketing.", "Lead"]}
-              highlightClass="highlighted"
-              trigger="hover"
-              gravity={0.73}
-              backgroundColor="transparent"
-              wireframes={false}
-              fontSize="2.25rem"
-            />
+          <div ref={sectionRef} style={{ width: '100%', height: '200px', position: 'relative' }}>
+            {isVisible && (
+              <FallingText
+                key={mountKey}
+                text="The Problem Is Not Always Your Marketing. It Is What Happens After the Lead Arrives."
+                highlightWords={["Marketing.", "Lead"]}
+                highlightClass="highlighted"
+                trigger="hover"
+                gravity={0.73}
+                backgroundColor="transparent"
+                wireframes={false}
+                fontSize="2.25rem"
+              />
+            )}
           </div>
           <p>
             Most businesses focus on getting leads. But getting leads is only half the equation. When a lead arrives — what happens next? Is there a fast, structured follow-up? Is the lead nurtured across multiple touchpoints? Is it moving through a clear pipeline? Or does it land in an inbox, a spreadsheet, a DM — and eventually go nowhere?
