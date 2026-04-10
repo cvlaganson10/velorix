@@ -88,18 +88,23 @@ export default function ServicesSection() {
         >
           <LogoLoop
             logos={[
-              { node: <span style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', color: 'var(--text-muted)', whiteSpace: 'nowrap' }}><IconCRM size={22} /> CRM Systems</span> },
-              { node: <span style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', color: 'var(--text-muted)', whiteSpace: 'nowrap' }}><IconAutomation size={22} /> Automation</span> },
-              { node: <span style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', color: 'var(--text-muted)', whiteSpace: 'nowrap' }}><IconAI size={22} /> AI Agents</span> },
-              { node: <span style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', color: 'var(--text-muted)', whiteSpace: 'nowrap' }}><IconWebsite size={22} /> Websites</span> },
-              { node: <span style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', color: 'var(--text-muted)', whiteSpace: 'nowrap' }}><IconCustom size={22} /> Custom Systems</span> },
-              { node: <span style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', color: 'var(--text-muted)', whiteSpace: 'nowrap' }}><IconSEO size={22} /> SEO</span> },
-              { node: <span style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', color: 'var(--text-muted)', whiteSpace: 'nowrap' }}><IconOperations size={22} /> Operations</span> },
-              { node: <span style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', color: 'var(--text-muted)', whiteSpace: 'nowrap' }}><IconMarketing size={22} /> Marketing</span> },
+              { src: '/logos/google.svg', alt: 'Google', title: 'Google' },
+              { src: '/logos/meta.svg', alt: 'Meta', title: 'Meta' },
+              { src: '/logos/openai.svg', alt: 'OpenAI', title: 'OpenAI' },
+              { src: '/logos/zapier.svg', alt: 'Zapier', title: 'Zapier' },
+              { src: '/logos/stripe.svg', alt: 'Stripe', title: 'Stripe' },
+              { src: '/logos/wordpress.svg', alt: 'WordPress', title: 'WordPress' },
+              { src: '/logos/slack.svg', alt: 'Slack', title: 'Slack' },
+              { src: '/logos/hubspot.svg', alt: 'HubSpot', title: 'HubSpot' },
+              { src: '/logos/shopify.svg', alt: 'Shopify', title: 'Shopify' },
+              { src: '/logos/notion.svg', alt: 'Notion', title: 'Notion' },
             ]}
-            speed={120}
+            speed={80}
             direction="left"
+            logoHeight={32}
+            gap={64}
             pauseOnHover={true}
+            scaleOnHover={true}
             fadeOut={true}
             fadeOutColor="#060B18"
           />
