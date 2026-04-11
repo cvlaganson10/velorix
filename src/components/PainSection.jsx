@@ -59,7 +59,7 @@ export default function PainSection() {
       <div className="container">
         <div className="section-header fade-in">
           <span className="eyebrow">Why Growth Gets Stuck</span>
-          <div ref={sectionRef} style={{ width: '100%', minHeight: '120px', position: 'relative' }}>
+          <div ref={sectionRef} style={{ width: '100%', height: '300px', position: 'relative' }}>
             {isVisible && (
               <FallingText
                 key={mountKey}
