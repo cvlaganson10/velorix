@@ -1,4 +1,5 @@
 import { IconTarget, IconShield, IconZap } from './Icons';
+import BorderGlow from './BorderGlow';
 
 const pillars = [
   {
@@ -32,13 +33,24 @@ export default function ApproachSection() {
 
         <div className="grid-3">
           {pillars.map((pillar, i) => (
-            <div key={i} className={`glass-card fade-in fade-in-delay-${i + 1}`}>
-              <div className="card-icon">
-                <pillar.icon size={24} />
+            <BorderGlow
+              key={i}
+              className={`fade-in fade-in-delay-${i + 1}`}
+              colors={['#2997FF', '#A855F7', '#FF6392', '#FF9F0A', '#30D158']}
+              glowColor="220 100 70"
+              glowIntensity={4.0}
+              backgroundColor="#0C1425"
+              fillOpacity={1.0}
+              edgeSensitivity={10}
+            >
+              <div className="glass-card approach-card">
+                <div className="card-icon">
+                  <pillar.icon size={24} />
+                </div>
+                <h3>{pillar.title}</h3>
+                <p>{pillar.description}</p>
               </div>
-              <h3>{pillar.title}</h3>
-              <p>{pillar.description}</p>
-            </div>
+            </BorderGlow>
           ))}
         </div>
       </div>

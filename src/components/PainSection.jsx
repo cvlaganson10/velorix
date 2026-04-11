@@ -1,5 +1,6 @@
 import { IconWarning } from './Icons';
 import FallingText from './FallingText';
+import ElectricBorder from './ElectricBorder';
 
 const painPoints = [
   {
@@ -80,13 +81,22 @@ export default function PainSection() {
 
         <div className="grid-3">
           {painPoints.map((point, i) => (
-            <div key={i} className={`card pain-card fade-in fade-in-delay-${i + 1}`}>
-              <div className="card-icon pain-card__icon">
-                <IconWarning size={22} />
+            <ElectricBorder
+              key={i}
+              color="#ff8080"
+              speed={1}
+              chaos={0.01}
+              borderRadius={24}
+              className={`fade-in fade-in-delay-${i + 1}`}
+            >
+              <div className="card pain-card">
+                <div className="card-icon pain-card__icon">
+                  <IconWarning size={22} />
+                </div>
+                <h3>{point.title}</h3>
+                <p>{point.description}</p>
               </div>
-              <h3>{point.title}</h3>
-              <p>{point.description}</p>
-            </div>
+            </ElectricBorder>
           ))}
         </div>
       </div>

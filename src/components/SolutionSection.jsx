@@ -1,4 +1,5 @@
 import { IconTarget, IconLayers, IconLink, IconArrowRight } from './Icons';
+import TextType from './TextType';
 
 const outcomes = [
   {
@@ -24,7 +25,19 @@ export default function SolutionSection() {
       <div className="container">
         <div className="section-header fade-in">
           <span className="eyebrow">The Velorix Way</span>
-          <h2>We Build the Infrastructure That Makes Your Business Actually Work.</h2>
+          <h2>
+            <TextType
+              text={["We Build the Infrastructure That Makes Your Business Actually Work."]}
+              typingSpeed={0}
+              deletingSpeed={10}
+              pauseDuration={4000}
+              showCursor
+              cursorCharacter="▎"
+              cursorBlinkDuration={0.5}
+              loop={true}
+              startOnVisible={true}
+            />
+          </h2>
           <p>
             Velorix is not a marketing agency. Not a web design studio. Not just an automation shop. We build complete business systems — the connected digital infrastructure behind your operations, your leads, your customer journeys, and your internal workflows.
           </p>

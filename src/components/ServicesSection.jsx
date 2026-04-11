@@ -4,6 +4,7 @@ import {
   IconArrowRight
 } from './Icons';
 import { LogoLoop } from './LogoLoop';
+import BorderGlow from './BorderGlow';
 
 const services = [
   {
