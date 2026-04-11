@@ -96,7 +96,9 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: var(--bg);
+  background: #060A16;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
   z-index: 99;
   opacity: 0;
   pointer-events: none;
@@ -191,7 +193,7 @@
 
 .hero__subtitle {
   font-size: var(--text-lg);
-  color: var(--text-muted);
+  color: #C8D2E0;
   max-width: 650px;
   margin: 0 auto var(--space-7);
   line-height: 1.8;
@@ -572,5 +574,140 @@
     left: auto;
     transform: none;
     margin-top: var(--space-8);
+  }
+
+  /* Hero mobile */
+  .hero__text {
+    padding: 0 var(--space-3);
+  }
+
+  .hero__text h1 {
+    font-size: 1.75rem;
+    line-height: 1.2;
+  }
+
+  .hero__subtitle {
+    font-size: var(--text-base);
+    line-height: 1.7;
+    max-width: 100%;
+  }
+
+  .hero__ctas {
+    flex-direction: column;
+    gap: var(--space-3);
+    width: 100%;
+  }
+
+  .hero__ctas .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* Navbar mobile menu */
+  .navbar__mobile {
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    background: rgba(6, 10, 22, 0.95);
+  }
+
+  .navbar__mobile-link {
+    font-size: var(--text-xl);
+  }
+
+  /* Section headers mobile */
+  .section-header h2 {
+    font-size: 1.5rem;
+    line-height: 1.25;
+  }
+
+  .section-header p {
+    font-size: var(--text-base);
+    line-height: 1.7;
+  }
+
+  /* Pain cards / ElectricBorder mobile */
+  .electric-border {
+    border-radius: 16px !important;
+  }
+
+  .electric-border .pain-card {
+    border-radius: 16px !important;
+    padding: var(--space-5) !important;
+  }
+
+  /* Add gap between stacked cards */
+  .grid-3,
+  .grid-auto {
+    gap: var(--space-6) !important;
+  }
+
+  /* BorderGlow cards mobile */
+  .border-glow-card {
+    --border-radius: 16px !important;
+    --glow-padding: 20px !important;
+  }
+
+  /* Navbar above everything */
+  .navbar {
+    z-index: 1000;
+  }
+
+  /* Stakes section mobile */
+  .stakes__emphasis {
+    font-size: var(--text-lg);
+    padding-left: var(--space-4);
+  }
+
+  /* About snapshot mobile */
+  .about-snapshot p {
+    font-size: var(--text-base);
+  }
+
+  /* Final CTA mobile */
+  .final-cta p {
+    font-size: var(--text-base);
+  }
+
+  .final-cta h2 {
+    font-size: 1.5rem;
+  }
+
+  /* Audience items mobile */
+  .audience-item {
+    padding: var(--space-4);
+    gap: var(--space-3);
+  }
+
+  /* Footer mobile */
+  .footer {
+    padding: var(--space-8) 0 var(--space-6);
+  }
+
+  .footer__brand > p {
+    max-width: 100%;
+  }
+
+  /* Section dividers mobile */
+  .section-divider {
+    height: var(--space-4);
+  }
+
+  /* Marketing section mobile */
+  .marketing-section .section-header {
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero__text h1 {
+    font-size: 1.5rem;
+  }
+
+  .section-header h2 {
+    font-size: 1.3rem;
+  }
+
+  .eyebrow {
+    font-size: 0.65rem;
   }
 }

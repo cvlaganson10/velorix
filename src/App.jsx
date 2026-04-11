@@ -11,6 +11,7 @@ import AboutSnapshot from './components/AboutSnapshot';
 import AudienceSection from './components/AudienceSection';
 import FinalCTA from './components/FinalCTA';
 import Footer from './components/Footer';
+import DarkVeil from './components/DarkVeil';
 import './App.css';
 
 export default function App() {
@@ -38,25 +39,37 @@ export default function App() {
       <Navbar />
       <main>
         <Hero />
-        <div className="section-divider" />
-        <PainSection />
-        <div className="section-divider" />
-        <SolutionSection />
-        <div className="section-divider" />
-        <ServicesSection />
-        <div className="section-divider" />
-        <StakesSection />
-        <div className="section-divider" />
-        <ApproachSection />
-        <div className="section-divider" />
-        <MarketingSection />
-        <div className="section-divider" />
-        <AboutSnapshot />
-        <div className="section-divider" />
-        <AudienceSection />
-        <FinalCTA />
+        <div style={{ position: 'relative' }}>
+          <div style={{ position: 'sticky', top: 0, height: '100vh', zIndex: 0, marginBottom: '-100vh' }}>
+            <DarkVeil
+              speed={1.5}
+              warpAmount={0.5}
+              scanlineIntensity={0.04}
+              scanlineFrequency={2}
+            />
+          </div>
+          <div style={{ position: 'relative', zIndex: 1 }}>
+            <div className="section-divider" />
+            <PainSection />
+            <div className="section-divider" />
+            <SolutionSection />
+            <div className="section-divider" />
+            <ServicesSection />
+            <div className="section-divider" />
+            <StakesSection />
+            <div className="section-divider" />
+            <ApproachSection />
+            <div className="section-divider" />
+            <MarketingSection />
+            <div className="section-divider" />
+            <AboutSnapshot />
+            <div className="section-divider" />
+            <AudienceSection />
+            <FinalCTA />
+            <Footer />
+          </div>
+        </div>
       </main>
-      <Footer />
     </>
   );
 }
